@@ -25,57 +25,54 @@ const questions = [
     {
         message: 'Enter your Table of Contents',
         type: 'input', 
-        name: 'tableContents',
-        default: 'None'
+        name: 'tableContents'
     },
 
     {
         message: 'Enter any Installation Instructions',
         type: 'input', 
-        name: 'installInstructions',
-        default: 'None'
+        name: 'installInstructions'
     },
 
     {
         message: 'How is the Application used?',
         type: 'input', 
-        name: 'appInstructions',
-        default: 'None'
+        name: 'appInstructions'
     },
 
     {
         message: 'Enter Project Licenses',
         type: 'input', 
-        name: 'projectLicense',
-        default: 'None'
+        name: 'projectLicense'
     },
 
     {
         message: 'Enter Additional Contributions',
         type: 'input', 
-        name: 'projectContribute',
-        default: 'None'
+        name: 'projectContribute'
     },
 
     {
         message: 'Was Project Testing Performed?',
         type: 'input', 
-        name: 'projectTesting',
-        default: 'None'
+        name: 'projectTesting'
     },
 
     {
         message: 'Provide email address for user Questions?',
         type: 'input', 
-        name: 'emailAddress',
-        default: 'None'
+        name: 'emailAddress'
     },
 ];
 
 function writeToFile(fileName, data) {
+    fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 function init() {
+    inquirer.prompt(questions).then((res) =>{
+        writeToFile('README.MD', generateMarkdown({...res}));
+    });
 
 }
 
