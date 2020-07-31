@@ -64,16 +64,17 @@ const questions = [
         name: 'emailAddress'
     },
 ];
-
+//function to write the file name & data to an existing file, or create the file.
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
-
+// prompts the questions to the user, returns the promise, writes the filename, and data.
 function init() {
     inquirer.prompt(questions).then((res) =>{
-        writeToFile('README.MD', generateMarkdown({...res}));
+        writeToFile('ReadMe.md', generateMarkdown({...res}));
     });
 
+    
 }
 
 init();
