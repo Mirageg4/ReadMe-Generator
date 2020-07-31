@@ -71,10 +71,22 @@ function writeToFile(fileName, data) {
 }
 
 // prompts the questions to the user, returns the promise, writes the filename, and data.
-function init() {
-    inquirer.prompt(questions).then((res) =>{
+ function init() {
+     inquirer.prompt(questions).then((res) => {
+             writeToFile('ReadMe.md', generateMarkdown({...res}));
+     }).catch(e => console.log(e));
+ }
+
+/*
+async function init() {
+    try {
+        const res = await inquirer.prompt(questions)
+
         writeToFile('ReadMe.md', generateMarkdown({...res}));
-    }).catch(e => console.log(e));
-}
+    } catch (e) {
+        console.log(e.message)
+    }
+*/
+
 
 init();
