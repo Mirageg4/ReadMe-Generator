@@ -1,6 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = ('generateMarkdown');
+const generateMarkdown = require('./generateMarkdown');
 const path = require ('path');
 
 //questions that will be prompted to the user
