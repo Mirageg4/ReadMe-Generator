@@ -7,34 +7,34 @@ function generateMarkdown(data,) {
 return`
 
   # User Name
-# ${data.userName.length ? data.userName: NOT_PROVIDED}
+${data.userName.length ? data.userName: NOT_PROVIDED}
 
   # Title
-# ${data.projectName.length ? data.projectName: NOT_PROVIDED}
+${data.projectName.length ? data.projectName: NOT_PROVIDED}
 
 # Description
-# ${data.projectDescription.length ? data.projectDescription: NOT_PROVIDED}
+${data.projectDescription.length ? data.projectDescription: NOT_PROVIDED}
 
 # Table of Contents
-# ${data.tableContents.length ? data.tableContents: NOT_PROVIDED}
+${data.tableContents.length ? data.tableContents: NOT_PROVIDED}
 
 # Installation Instructions
-# ${data.installInstructions.length ? data.installInstructions: NOT_PROVIDED}
+${data.installInstructions.length ? data.installInstructions: NOT_PROVIDED}
 
 # Application Use Instructions
-# ${data.appInstructions.length ? data.appInstructions: NOT_PROVIDED}
+${data.appInstructions.length ? data.appInstructions: NOT_PROVIDED}
 
 # Project Licenses
-# ${data.projectLicense.length ? data.projectLicense: NOT_PROVIDED}
+${data.projectLicense.length ? data.projectLicense: NOT_PROVIDED}
 
 # Additional Contributions
-# ${data.projectContribute.length ? data.projectContribute: NOT_PROVIDED}
+${data.projectContribute.length ? data.projectContribute: NOT_PROVIDED}
 
 # Project Testing
-# ${data.projectTesting.length ? data.projectTesting: NOT_PROVIDED}
+${data.projectTesting.length ? data.projectTesting: NOT_PROVIDED}
 
 # Project email
-# ${data.emailAddress.length ? data.emailAddress: NOT_PROVIDED}
+${data.emailAddress.length ? data.emailAddress: NOT_PROVIDED}
 
 `;
 }

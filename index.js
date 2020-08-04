@@ -24,7 +24,7 @@ const questions = [
 
     {
         message: 'Enter your Table of Contents',
-        type: 'input', 
+        type: 'editor', 
         name: 'tableContents'
     },
 
@@ -76,17 +76,6 @@ function writeToFile(fileName, data) {
              writeToFile('ReadMe.md', generateMarkdown({...res}));
      }).catch(e => console.log(e));
  }
-
-/*
-async function init() {
-    try {
-        const res = await inquirer.prompt(questions)
-
-        writeToFile('ReadMe.md', generateMarkdown({...res}));
-    } catch (e) {
-        console.log(e.message)
-    }
-*/
 
 
 init();
