@@ -22,21 +22,13 @@ Project Testing
 
 Project email
 
-
-
-https://drive.google.com/drive/folders/1mC6LRfxm_Uq4bjBPKr7Kp1vAhWzFE5Np
-
-
-
-https://drive.google.com/file/d/17NC8daoJGSK8JNd0Lp-zZGKqd_WeQQWc/viewe
-
-
-
 # Installation Instructions
 npm install for node modules
 
 # Application Use Instructions
-see video link
+https://drive.google.com/drive/folders/1mC6LRfxm_Uq4bjBPKr7Kp1vAhWzFE5Np
+
+https://github.com/Mirageg4/ReadMe-Generator
 
 # Project Licenses
 MIT
